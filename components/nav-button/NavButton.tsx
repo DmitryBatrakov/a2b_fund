@@ -19,11 +19,11 @@ export default function NavButton() {
     return (
         <NavigationMenu>
             <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent">
+                <NavigationMenuItem >
+                    <NavigationMenuTrigger className="bg-transparent p-0">
                         <RxHamburgerMenu size={30} color="#363636" />
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="w-80 bg-whit">
+                    <NavigationMenuContent className="w-80 bg-white" >
                         <ul className="w-full p-2 text-[#3b2000]">
                             <ListItem href="/docs" title={t('nav_home')}>
                                 {t('nav_home_description')}
