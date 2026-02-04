@@ -1,0 +1,15 @@
+{
+    "Header": {
+        "nav_home": "About the company",
+        "nav_home_description": "Briefly telling about the company`s mission, values, and market experience.",
+
+        "nav_our_projects": "Our Projects",
+        "nav_our_projects_description": "Here you will find examples of implemented projects and our work results.",
+
+        "nav_our_services": "Our Services",
+        "nav_our_services_description": "Describing the services we help clients implement from idea to launch.",
+
+        "nav_contact_us": "Contact us",
+        "nav_contact_us_description": "Get in touch with our team to discuss your project and get a personalized quote."
+    }
+}

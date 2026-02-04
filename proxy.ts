@@ -1,0 +1,11 @@
+// proxy.ts (в корне проекта)
+import createMiddleware from 'next-intl/middleware';
+
+export default createMiddleware({
+  locales: ['en', 'ru', 'ua', 'es'],
+  defaultLocale: 'en',
+});
+
+export const config = {
+  matcher: ['/((?!api|_next|.*\\..*).*)'],
+};
