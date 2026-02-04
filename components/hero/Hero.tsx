@@ -7,7 +7,7 @@ export const Hero = () => {
     const t = useTranslations('Hero');
 
     return (
-        <section className="relative w-full overflow-hidden" style={{ height: 'calc(100vh - 3.5rem)' }}>
+        <section className="relative w-full overflow-hidden min-h-screen">
             <Image
                 src="/assets/heroImg.jpg"
                 alt="Hero background"
