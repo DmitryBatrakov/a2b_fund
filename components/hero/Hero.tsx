@@ -18,7 +18,7 @@ export const Hero = () => {
             {/* <div className="absolute bg-black/45 w-full h-full" /> */}
             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/35 to-transparent" />
 
-            <div className="absolute top-12 left-0 w-full h-full flex flex-col justify-center items-center gap-5 px-4">
+            <div className="absolute top-12 left-0 w-full h-full flex flex-col justify-center items-center gap-5 px-4 ove">
                 <div className="flex flex-col justify-center items-center ">
                     <h1 className="text-5xl text-center font-bold text-white">
                         A2B PRIVATE{" "}

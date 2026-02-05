@@ -72,38 +72,66 @@ export const Company = () => {
     const t = useTranslations("Company");
 
     return (
-        <section className="relative w-full overflow-hidden min-h-screen p-3 pt-10">
-            <div className="flex flex-col gap-15 items-center justify-center">
+        <section className="relative w-full overflow-hidden min-h-screen p-3 flex flex-col justify-center items-center" >
+            <div className="flex flex-col gap-20 items-center justify-center">
                 <div className="flex flex-col gap-4 items-center justify-center">
-                    <h2 className="text-3xl font-bold">{t("titile")}</h2>
-                    <p className="text-md text-center">{t("description")}</p>
+                    <h2 className="text-4xl font-bold text-[#917355]">{t("titile")}</h2>
+                    <p className="text-md text-center md:max-w-2xl">{t("description")}</p>
                 </div>
-                <Carousel
-                    opts={{
-                        align: "start",
-                        loop: false,
-                    }}
-                    orientation="vertical"
-                    className="w-full max-w-xs h-[600px]"
-                >
-                    <CarouselContent className="-mt-4 h-[600px]">
-                        {cards.map((card, idx) => (
-                            <CarouselItem key={idx} className="pt-4 basis-1/3">
-                                <Card className="w-[250px] h-[180px] px-4 py-4 w-full">
-                                    <CardContent className="flex flex-col w-full h-full items-center justify-center p-0">
-                                        <div className="flex flex-col items-center justify-center gap-2 text-center">
-                                            <p>{card.icon}</p>
-                                            <h3 className="text-lg font-bold">{t(card.titleKey)}</h3>
-                                            <p className="text-md text-[#968c81]">{t(card.descKey)}</p>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                </Carousel>
+                {/* Vertical carousel — mobile */}
+                <div className="md:hidden w-full max-w-xs">
+                    <Carousel
+                        opts={{ align: "start", loop: false }}
+                        orientation="vertical"
+                        className="w-full h-[400px]"
+                    >
+                        <CarouselContent className="-mt-4 h-[400px]">
+                            {cards.map((card, idx) => (
+                                <CarouselItem key={idx} className="pt-4 basis-1/2">
+                                    <Card className="w-full h-[180px] px-4 py-4">
+                                        <CardContent className="flex flex-col w-full h-full items-center justify-center p-0">
+                                            <div className="flex flex-col items-center justify-center gap-2 text-center">
+                                                <p>{card.icon}</p>
+                                                <h3 className="text-lg font-bold">{t(card.titleKey)}</h3>
+                                                <p className="text-md text-[#968c81]">{t(card.descKey)}</p>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
+                </div>
+
+                {/* Horizontal carousel — desktop */}
+                <div className="hidden md:block w-full max-w-4xl px-12">
+                    <Carousel
+                        opts={{ align: "start", loop: false }}
+                        orientation="horizontal"
+                        className="w-full"
+                    >
+                        <CarouselContent className="-ml-4">
+                            {cards.map((card, idx) => (
+                                <CarouselItem key={idx} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
+                                    <Card className="w-full h-[180px] px-4 py-4">
+                                        <CardContent className="flex flex-col w-full h-full items-center justify-center p-0">
+                                            <div className="flex flex-col items-center justify-center gap-2 text-center">
+                                                <p>{card.icon}</p>
+                                                <h3 className="text-lg font-bold">{t(card.titleKey)}</h3>
+                                                <p className="text-md text-[#968c81]">{t(card.descKey)}</p>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
+                </div>
+                <p className="text-md text-center md:max-w-2xl">{t('description2')}</p>
             </div>
         </section>
     );
