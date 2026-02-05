@@ -11,5 +11,10 @@
 
         "nav_contact_us": "Contact us",
         "nav_contact_us_description": "Get in touch with our team to discuss your project and get a personalized quote."
+    },
+    "Hero": {
+        "h2": "Real Estate Investments in Valencia",
+        "h3": "Reliable investments in Spanish real estate with full support",
+        "button": "Learn more"
     }
 }
