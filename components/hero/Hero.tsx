@@ -20,10 +20,10 @@ export const Hero = () => {
 
             <div className="absolute top-12 left-0 w-full h-full flex flex-col justify-center items-center gap-5 px-4">
                 <div className="flex flex-col justify-center items-center ">
-                    <h1 className="text-4xl text-center font-bold text-white">
+                    <h1 className="text-5xl text-center font-bold text-white">
                         A2B PRIVATE{" "}
                     </h1>
-                    <h1 className="text-4xl text-center font-bold text-white">
+                    <h1 className="text-5xl text-center font-bold text-white">
                         EQUITY FUND
                     </h1>
                 </div>

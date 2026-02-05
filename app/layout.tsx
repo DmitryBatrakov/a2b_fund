@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale } from 'next-intl/server';
+import { getLocale, getMessages } from 'next-intl/server';
 import "./globals.css";
 
 
@@ -29,12 +29,14 @@ export default async function RootLayout({
 }>) {
 
     const locale = await getLocale();
+    const messages = await getMessages();
+
     return (
         <html lang={locale}>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <NextIntlClientProvider>{children}</NextIntlClientProvider>
+                <NextIntlClientProvider locale={locale} messages={messages}>{children}</NextIntlClientProvider>
             </body>
         </html>
     );
