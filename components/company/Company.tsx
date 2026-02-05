@@ -72,7 +72,7 @@ export const Company = () => {
     const t = useTranslations("Company");
 
     return (
-        <section className="relative w-full overflow-hidden min-h-screen p-3 flex flex-col justify-center items-center" >
+        <section className="relative w-full overflow-hidden py-15 p-3 flex flex-col justify-center items-center" >
             <div className="flex flex-col gap-20 items-center justify-center">
                 <div className="flex flex-col gap-4 items-center justify-center">
                     <h2 className="text-4xl font-bold text-[#917355]">{t("titile")}</h2>
@@ -106,17 +106,17 @@ export const Company = () => {
                 </div>
 
                 {/* Horizontal carousel — desktop */}
-                <div className="hidden md:block w-full max-w-4xl px-12">
+                <div className="hidden md:block w-full max-w-4xl px-6">
                     <Carousel
                         opts={{ align: "start", loop: false }}
                         orientation="horizontal"
                         className="w-full"
                     >
-                        <CarouselContent className="-ml-4">
+                        <CarouselContent className="-ml-4 w-auto">
                             {cards.map((card, idx) => (
                                 <CarouselItem key={idx} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
-                                    <Card className="w-full h-[180px] px-4 py-4">
-                                        <CardContent className="flex flex-col w-full h-full items-center justify-center p-0">
+                                    <Card className="w-full h-[200px] px-4 py-4">
+                                        <CardContent className="flex flex-col w-full h-full items-center justify-start p-0">
                                             <div className="flex flex-col items-center justify-center gap-2 text-center">
                                                 <p>{card.icon}</p>
                                                 <h3 className="text-lg font-bold">{t(card.titleKey)}</h3>

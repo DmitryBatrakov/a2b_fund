@@ -1,4 +1,3 @@
-"use client";
 
 import { CustomDrawer } from "../drawer/Drawer";
 import { LocaleSwitcher } from "../locale-switcher/LocaleSwitcher";

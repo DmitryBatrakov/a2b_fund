@@ -13,9 +13,10 @@ import Link from "next/link";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 
+
 export function CustomDrawer() {
     const t = useTranslations("Header");
-
+    
     return (
         <Drawer direction="right">
             <DrawerTrigger asChild className="p-2 bg-[#F7F5F2] rounded-xl shadow-md">

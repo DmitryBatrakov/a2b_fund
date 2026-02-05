@@ -20,8 +20,8 @@
         "description2": "Trabajamos con inversores que valoran la fiabilidad, la transparencia y los resultados. Más de 10 años de experiencia en construcción y desarrollo avalan nuestra competencia y solidez.",
 
         "card1": {
-            "title": "10+ años",
-            "description": "en el mercado español"
+            "title": "10+ ",
+            "description": "años en el mercado español"
         },
         "card2": {
             "title": "70+",
@@ -62,7 +62,7 @@
         "fact_1": "Entorno multinacional y muy favorable para expatriados",
         "fact_2": "Idioma oficial: español; también catalán, euskera y gallego",
         "fact_3": "Salario medio: ",
-        "fact_3_value": "2.263 € / mes",
+        "fact_3_value": "2,263 € / mes",
         "fact_4": "PIB per cápita: ",
         "fact_4_value": "27.500 $",
         "economy_title": "Economía",
