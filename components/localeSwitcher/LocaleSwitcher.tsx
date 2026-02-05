@@ -34,6 +34,7 @@ export function LocaleSwitcher() {
         const newPath = pathname.replace(/^\/[a-z]{2}/, `/${newLocale}`);
         router.replace(newPath);
     };
+    
 
     return (
         <DropdownMenu>
