@@ -1,4 +1,3 @@
-// proxy.ts (в корне проекта)
 import createMiddleware from 'next-intl/middleware';
 
 export default createMiddleware({

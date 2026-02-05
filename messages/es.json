@@ -17,6 +17,7 @@
     "Company": {
         "titile": "Sobre la empresa",
         "description": "A2B es un promotor internacional y empresa de gestión en España, especializada en la selección, reconstrucción y gestión de inmuebles en Valencia. Creamos productos de inversión completamente listos.",
+        "description2": "Trabajamos con inversores que valoran la fiabilidad, la transparencia y los resultados. Más de 10 años de experiencia en construcción y desarrollo avalan nuestra competencia y solidez.",
 
         "card1": {
             "title": "10+ años",
@@ -49,6 +50,85 @@
         "card8": {
             "title": "Capital propio",
             "description": "En cada proyecto existe nuestra propia inversión"
+        }
+    },
+    "Spain": {
+        "title": "Por qué España y Valencia?",
+        "subtitle": "Sobre España",
+        "people": "Población: 48 millones, capital — Madrid",
+        "intro": "España es uno de los destinos más atractivos de Europa para invertir en bienes raíces.",
+        "why_spain_title": "¿Por qué España?",
+        "fact_0": "Miembro de la UE y la OTAN, sistema jurídico sólido",
+        "fact_1": "Entorno multinacional y muy favorable para expatriados",
+        "fact_2": "Idioma oficial: español; también catalán, euskera y gallego",
+        "fact_3": "Salario medio: ",
+        "fact_3_value": "2.263 € / mes",
+        "fact_4": "PIB per cápita: ",
+        "fact_4_value": "27.500 $",
+        "economy_title": "Economía",
+        "climate_title": "Ventajas climáticas:",
+        "climate_0": "España es #1 en Europa por número de días soleados.",
+        "climate_1": "Temperaturas promedio: Verano: +22…+27°C, Invierno: +10…+13°C",
+        "expat_line": "Mejor país de Europa para expatriados (2023)",
+        "expat_sub": "TOP-10 mundial según InterNations.",
+        "investor_title": "Beneficios para inversores",
+        "investor_0": "Uno de los líderes europeos en inversión inmobiliaria",
+        "investor_1": "Fuerte demanda de alquiler (turismo + inmigración + mercado local)",
+        "investor_2": "Marco legal transparente y protección al inversor",
+        "investor_3": "Alta liquidez y crecimiento sostenido del capital",
+        "summer_temperature": "Verano",
+        "winter_temperature": "Invierno",
+        "summer_temperature_value": "+22…+27°C",
+        "winter_temperature_value": "+10…+13°C"
+    },
+    "OurServices": {
+        "title": "Nuestros servicios",
+        "selection": {
+            "title": "Selección de inmuebles",
+            "description": "Seleccionamos propiedades con alto potencial de inversión. Nuestro arquitecto evalúa cada activo en términos de viabilidad técnica, posibilidades de reforma y obtención de licencias."
+        },
+        "legal": {
+            "title": "Asesoría jurídica",
+            "description": "Acompañamiento legal completo: due diligence, formalización de la operación, licencias y documentación necesaria para reforma y explotación."
+        },
+        "translation": {
+            "title": "Traducción y acompañamiento",
+            "description": "Proporcionamos traductor de español en todas las etapas — desde la primera visita hasta la firma final."
+        },
+        "management": {
+            "title": "Gestión de propiedades",
+            "description": "Nos encargamos del alquiler, mantenimiento técnico, atención a huéspedes y control de rentabilidad. Garantizamos informes transparentes y resultados estables."
+        }
+    },
+    "WhyChooseUs": {
+        "title": "Por qué nos eligen",
+        "experience": {
+            "title": "Más de 10 años de experiencia en inversión e inmobiliaria",
+            "description": "Trabajamos en el mercado español y europeo desarrollando proyectos de distintos tamaños."
+        },
+        "transparency": {
+            "title": "Transparencia y responsabilidad",
+            "description": "Modelo claro de colaboración, informes periódicos y seguridad jurídica en cada etapa."
+        },
+        "sourcing": {
+            "title": "Selección y compra de activos líquidos",
+            "description": "Analizamos el mercado, la viabilidad técnica y el potencial de rentabilidad de cada propiedad."
+        },
+        "development": {
+            "title": "Diseño, construcción y reforma",
+            "description": "Cubrimos todo el ciclo de desarrollo — desde el proyecto hasta el activo terminado."
+        },
+        "management": {
+            "title": "Gestión profesional de activos",
+            "description": "Alquiler, mantenimiento, control de ingresos y gestión integral."
+        },
+        "risks": {
+            "title": "Minimización de riesgos para el inversor",
+            "description": "Due diligence jurídico, verificación completa del activo y modelos financieros realistas."
+        },
+        "invest_together": {
+            "title": "Invertimos juntos con usted",
+            "description": "En cada proyecto existe inversión propia — compartimos riesgos y respondemos por el resultado."
         }
     }
 }

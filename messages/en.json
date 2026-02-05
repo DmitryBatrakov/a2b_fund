@@ -14,6 +14,7 @@
     "Company": {
         "titile": "About Company",
         "description": "A2B is an international developer and management company in Spain, specializing in the selection, reconstruction and management of real estate in Valencia. We create fully ready-made investment products.",
+        "description2": "We work with investors who value reliability, transparency and strong results. More than 10 years of development and construction experience confirm our expertise and trustworthiness.",
 
         "card1": {
             "title": "10+ years",
@@ -46,6 +47,85 @@
         "card8": {
             "title": "Our capital",
             "description": "Every project includes our own capital investment"
+        }
+    },
+    "Spain": {
+        "title": "Why Spain and Valencia?",
+        "subtitle": "About Spain",
+        "people": "Population: 48 million, capital — Madrid",
+        "intro": "Spain is one of Europe's most attractive destinations for real-estate investment.",
+        "why_spain_title": "Why Spain?",
+        "fact_0": "Member of the EU and NATO, strong and stable legal system",
+        "fact_1": "Multinational, expat-friendly environment",
+        "fact_2": "Official language: Spanish; also Catalan, Basque and Galician",
+        "fact_3": "Average salary: ",
+        "fact_3_value": "€2,263 / month",
+        "fact_4": "GDP per capita: ",
+        "fact_4_value": "$27,500",
+        "economy_title": "Economy",
+        "climate_title": "Climate advantages:",
+        "climate_0": "Spain ranks #1 in Europe for number of sunny days.",
+        "climate_1": "Average temperatures: Summer: +22…+27°C, Winter: +10…+13°C",
+        "expat_line": "Best country in Europe for expats (2023)",
+        "expat_sub": "TOP-10 in InterNations global ranking.",
+        "investor_title": "Investor benefits",
+        "investor_0": "One of Europe's leaders in property investment",
+        "investor_1": "Strong rental demand: tourism, immigration, local market",
+        "investor_2": "Transparent legal framework and investor protection",
+        "investor_3": "High liquidity and long-term capital appreciation",
+        "summer_temperature": "Summer",
+        "winter_temperature": "Winter",
+        "summer_temperature_value": "+22…+27°C",
+        "winter_temperature_value": "+10…+13°C"
+    },
+    "OurServices": {
+        "title": "Our Services",
+        "selection": {
+            "title": "Property sourcing",
+            "description": "We identify properties with strong investment potential. Our architect reviews each asset to assess technical feasibility, renovation capacity and licensing options."
+        },
+        "legal": {
+            "title": "Legal support",
+            "description": "Full legal service: due diligence, transaction execution, obtaining licenses and all documentation required for renovation and operation."
+        },
+        "translation": {
+            "title": "Translation and assistance",
+            "description": "We provide a Spanish-speaking translator throughout the entire process — from the first visit to final signing."
+        },
+        "management": {
+            "title": "Property management",
+            "description": "We handle rentals, technical maintenance, guest services and profitability control. You receive transparent reporting and consistent financial performance."
+        }
+    },
+    "WhyChooseUs": {
+        "title": "Why choose us",
+        "experience": {
+            "title": "Over 10 years of experience in investment and real estate",
+            "description": "We operate across Spain and Europe, delivering successful development projects of different scales."
+        },
+        "transparency": {
+            "title": "Transparency and accountability",
+            "description": "Clear cooperation model, regular reporting, and full legal compliance throughout the process."
+        },
+        "sourcing": {
+            "title": "Sourcing and acquisition of high-liquidity assets",
+            "description": "Market analysis, technical evaluation, legal verification and income-potential assessment."
+        },
+        "development": {
+            "title": "Design, construction and renovation",
+            "description": "Full development cycle — from concept to completed property."
+        },
+        "management": {
+            "title": "Professional asset management",
+            "description": "Rentals, maintenance, guest services and profitability control."
+        },
+        "risks": {
+            "title": "Risk minimization for investors",
+            "description": "Legal due diligence, document auditing and transparent financial models."
+        },
+        "invest_together": {
+            "title": "We invest our own capital",
+            "description": "Every project includes our own funds — we share the risk and responsibility for the result."
         }
     }
 }
