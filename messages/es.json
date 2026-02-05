@@ -1,20 +1,54 @@
 {
     "Header": {
         "nav_home": "Sobre la empresa",
-        "nav_home_description": "Breve descripción de la misión de la empresa, sus valores y experiencia en el mercado.",
 
         "nav_our_projects": "Nuestros proyectos",
-        "nav_our_projects_description": "Aquí encontrarás ejemplos de proyectos realizados y los resultados de nuestro trabajo.",
 
         "nav_our_services": "Nuestros servicios",
-        "nav_our_services_description": "Descripción de los servicios que ayudamos a nuestros clientes a implementar, desde la idea hasta el lanzamiento.",
 
         "nav_contact_us": "Contáctanos",
-        "nav_contact_us_description": "Ponte en contacto con nuestro equipo para hablar de tu proyecto y obtener una propuesta personalizada."
+        "menu_title": "Menú"
     },
     "Hero": {
         "h2": "Inversiones inmobiliarias en Valencia",
         "h3": "Inversiones fiables en el mercado inmobiliario español con acompañamiento completo",
         "button": "Más información"
+    },
+    "Company": {
+        "titile": "Sobre la empresa",
+        "description": "A2B es un promotor internacional y empresa de gestión en España, especializada en la selección, reconstrucción y gestión de inmuebles en Valencia. Creamos productos de inversión completamente listos.",
+
+        "card1": {
+            "title": "10+ años",
+            "description": "en el mercado español"
+        },
+        "card2": {
+            "title": "70+",
+            "description": "proyectos realizados"
+        },
+        "card3": {
+            "title": "Activos líquidos",
+            "description": "Selección y compra de activos de alta liquidez"
+        },
+        "card4": {
+            "title": "Desarrollo",
+            "description": "Diseño, construcción y reformas"
+        },
+        "card5": {
+            "title": "Gestión",
+            "description": "Gestión integral de propiedades y alquileres"
+        },
+        "card6": {
+            "title": "Minimización de riesgos",
+            "description": "Protección de los intereses de los inversores"
+        },
+        "card7": {
+            "title": "Transparencia",
+            "description": "Informes financieros transparentes y acompañamiento legal"
+        },
+        "card8": {
+            "title": "Capital propio",
+            "description": "En cada proyecto existe nuestra propia inversión"
+        }
     }
 }

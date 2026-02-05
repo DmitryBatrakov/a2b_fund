@@ -1,20 +1,51 @@
 {
     "Header": {
         "nav_home": "About the company",
-        "nav_home_description": "Briefly telling about the company`s mission, values, and market experience.",
-
         "nav_our_projects": "Our Projects",
-        "nav_our_projects_description": "Here you will find examples of implemented projects and our work results.",
-
         "nav_our_services": "Our Services",
-        "nav_our_services_description": "Describing the services we help clients implement from idea to launch.",
-
         "nav_contact_us": "Contact us",
-        "nav_contact_us_description": "Get in touch with our team to discuss your project and get a personalized quote."
+        "menu_title": "Menu"
     },
     "Hero": {
         "h2": "Real Estate Investments in Valencia",
         "h3": "Reliable investments in Spanish real estate with full support",
         "button": "Learn more"
+    },
+    "Company": {
+        "titile": "About Company",
+        "description": "A2B is an international developer and management company in Spain, specializing in the selection, reconstruction and management of real estate in Valencia. We create fully ready-made investment products.",
+
+        "card1": {
+            "title": "10+ years",
+            "description": "of experience in the Spanish market"
+        },
+        "card2": {
+            "title": "70+",
+            "description": "completed projects"
+        },
+        "card3": {
+            "title": "High-liquidity assets",
+            "description": "Professional acquisition of high-liquidity assets"
+        },
+        "card4": {
+            "title": "Development",
+            "description": "Design, construction and renovation"
+        },
+        "card5": {
+            "title": "Management",
+            "description": "Property and rental management"
+        },
+        "card6": {
+            "title": "Risk minimization",
+            "description": "Protection of investors' interests"
+        },
+        "card7": {
+            "title": "Transparency",
+            "description": "Transparent financial reporting and legal support"
+        },
+        "card8": {
+            "title": "Our capital",
+            "description": "Every project includes our own capital investment"
+        }
     }
 }

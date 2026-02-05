@@ -24,7 +24,7 @@ export function CustomDrawer() {
             <DrawerContent>
                 <DrawerHeader className="px-4 py-2 mt-4">
                     <DrawerTitle className="text-xl font-semibold">
-                        Menu
+                        {t("menu_title")}
                     </DrawerTitle>
                     <DrawerClose asChild className="p-0">
                         <button className="bg-transparent absolute top-5 right-5 p-0">
