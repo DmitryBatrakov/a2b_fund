@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import {
     Accordion,
@@ -5,6 +8,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useInView } from "@/lib/use-in-view";
 import {
     CalendarCheck,
     ShieldCheck,
@@ -27,9 +31,16 @@ const items = [
 
 export function WhyChooseUs() {
     const t = useTranslations("WhyChooseUs");
+    const sectionRef = useRef<HTMLElement>(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
 
     return (
-        <section className="py-10 md:py-20 bg-[#F7F5F2]">
+        <section
+            ref={sectionRef}
+            className={`py-10 md:py-20 bg-[#F7F5F2] transition-all duration-500 ${
+                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}
+        >
             <div className="container mx-auto px-4">
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-12 md:mb-16">
                     {t("title")}

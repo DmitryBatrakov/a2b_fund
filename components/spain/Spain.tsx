@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import {
     Sun,
@@ -10,12 +13,20 @@ import {
     Globe,
 } from "lucide-react";
 import { LuDot } from "react-icons/lu";
+import { useInView } from "@/lib/use-in-view";
 
 export function Spain() {
     const t = useTranslations("Spain");
+    const sectionRef = useRef<HTMLElement>(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
 
     return (
-        <section className="py-20 bg-[#F7F5F2]">
+        <section
+            ref={sectionRef}
+            className={`py-20 bg-[#F7F5F2] transition-all duration-500 ${
+                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}
+        >
             <div className="container mx-auto px-4">
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
                     {t("title")}
@@ -135,7 +146,7 @@ export function Spain() {
 
                 {/* Investor Benefits */}
                 <div>
-                    <h3 className="font-heading text-2xl md:text-3xl font-semibold text-foreground text-center mb-8">
+                    <h3 className="font-heading text-2xl md:text-3xl font-semibold text-[#917355] text-center mb-8">
                         {t("investor_title")}
                     </h3>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">

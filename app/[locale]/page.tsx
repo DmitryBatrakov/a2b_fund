@@ -1,6 +1,8 @@
+import { InvestmentLifecycle } from "@/components/InvestmentLifecycle/InvestmentLifecycle";
 import { Company } from "@/components/company/Company";
 import Header from "@/components/header/Header";
 import { Hero } from "@/components/hero/Hero";
+import { OurPartners } from "@/components/our-partners/OurPartners";
 import { OurProjects, type Project } from "@/components/our-projects/OurProjects";
 import { OurSevices } from "@/components/our-services/OurSevices";
 import { Spain } from "@/components/spain/Spain";
@@ -19,6 +21,8 @@ export default function Home() {
             <OurSevices />
             <WhyChooseUs />
             <OurProjects projects={projects} />
+            <OurPartners />
+            <InvestmentLifecycle />
         </div>
     );
 }

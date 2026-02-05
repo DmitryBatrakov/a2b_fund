@@ -1,5 +1,9 @@
+"use client";
+
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Search, Scale, Languages, Building2 } from "lucide-react";
+import { useInView } from "@/lib/use-in-view";
 
 const services = [
     { key: "selection", icon: Search },
@@ -10,9 +14,16 @@ const services = [
 
 export const OurSevices = () => {
     const t = useTranslations("OurServices");
+    const sectionRef = useRef<HTMLElement>(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
 
     return (
-        <section className="py-10 md:py-20 min-h-screen md:min-h-0 ">
+        <section
+            ref={sectionRef}
+            className={`py-10 md:py-20 min-h-screen md:min-h-0 transition-all duration-500 ${
+                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}
+        >
             <div className="container mx-auto px-4">
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
                     {t("title")}

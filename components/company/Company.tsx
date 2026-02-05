@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import { IoHammerOutline } from "react-icons/io5";
 import { MdOutlineCalendarMonth } from "react-icons/md"; // 10+ лет
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2"; // 70+ проектов
@@ -8,6 +11,7 @@ import { TbReportAnalytics } from "react-icons/tb"; // Прозрачность
 import { RiHandCoinLine } from "react-icons/ri"; // Собственный капитал
 
 import { useTranslations } from "next-intl";
+import { useInView } from "@/lib/use-in-view";
 import { Card, CardContent } from "@/components/ui/card";
 
 import {
@@ -70,9 +74,16 @@ const cards: Cards[] = [
 
 export const Company = () => {
     const t = useTranslations("Company");
+    const sectionRef = useRef<HTMLElement>(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
-        <section className="relative w-full overflow-hidden py-15 p-3 flex flex-col justify-center items-center" >
+        <section
+            ref={sectionRef}
+            className={`relative w-full overflow-hidden py-15 p-3 flex flex-col justify-center items-center transition-all duration-500 ${
+                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}
+        >
             <div className="flex flex-col gap-20 items-center justify-center">
                 <div className="flex flex-col gap-4 items-center justify-center">
                     <h2 className="text-4xl font-bold text-[#917355]">{t("titile")}</h2>
