@@ -14,7 +14,7 @@ export const Hero = () => {
             className="relative w-full overflow-hidden min-h-screen"
         >
             <Image
-                src="/assets/heroImg.jpg"
+                src="/assets/heroImg.webp"
                 alt="Hero background"
                 fill
                 priority
