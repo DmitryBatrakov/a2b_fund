@@ -136,13 +136,50 @@
     },
     "OurPartners": {
         "title": "Nuestros socios",
-        "partner_1": "Socio 1",
-        "partner_2": "Socio 2",
-        "partner_3": "Socio 3",
-        "partner_4": "Socio 4",
-        "partner_5": "Socio 5",
-        "partner_6": "Socio 6",
-        "partner_7": "Socio 7",
-        "partner_8": "Socio 8"
+        "partners": {
+            "partner_1": "Socio 1",
+            "partner_2": "Socio 2",
+            "partner_3": "Socio 3",
+            "partner_4": "Socio 4",
+            "partner_5": "Socio 5",
+            "partner_6": "Socio 6",
+            "partner_7": "Socio 7",
+            "partner_8": "Socio 8"
+        }
+    },
+    "Lifecycle": {
+        "main_title": "Etapas de colaboración",
+        "card_1": {
+            "title_card": "1. Consultoría",
+            "description_card": "Definimos sus objetivos de inversión, presupuesto y estrategia."
+        },
+        "card_2": {
+            "title_card": "2. Selección del inmueble",
+            "description_card": "Analizamos el mercado y ofrecemos propiedades con el mayor potencial de rentabilidad. Nuestro arquitecto evalúa la viabilidad técnica y las licencias necesarias."
+        },
+        "card_3": {
+            "title_card": "3. Reserva del inmueble (1%)",
+            "description_card": "Bloqueamos la propiedad y comenzamos la due diligence legal."
+        },
+        "card_4": {
+            "title_card": "4. Firma del contrato de arras",
+            "description_card": "Fijamos las condiciones de la operación y los plazos de financiación."
+        },
+        "card_5": {
+            "title_card": "5. Compra del inmueble",
+            "description_card": "Acompañamiento legal completo y firma del contrato de compraventa."
+        },
+        "card_6": {
+            "title_card": "6. Reforma y puesta en funcionamiento",
+            "description_card": "Proyecto, obras, mobiliario y obtención de licencias."
+        },
+        "card_7": {
+            "title_card": "7. Firma del contrato de gestión",
+            "description_card": "Nos encargamos del alquiler, mantenimiento y control de rentabilidad."
+        },
+        "card_8": {
+            "title_card": "8. Generación de ingresos",
+            "description_card": "Usted recibe una renta estable a través del alquiler o la venta del activo terminado."
+        }
     }
 }

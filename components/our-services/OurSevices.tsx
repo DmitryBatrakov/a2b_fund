@@ -25,7 +25,7 @@ export const OurSevices = () => {
             }`}
         >
             <div className="container mx-auto px-4">
-                <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
+                <h2 className="font-fraunces text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
                     {t("title")}
                 </h2>
 
@@ -42,7 +42,7 @@ export const OurSevices = () => {
                                         color="#917355"
                                     />
                                 </div>
-                                <h3 className="font-heading text-xl font-semibold text-foreground">
+                                <h3 className="font-fraunces text-xl font-semibold text-foreground">
                                     {t(`${key}.title`)}
                                 </h3>
                             </div>

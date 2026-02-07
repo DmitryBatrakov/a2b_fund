@@ -18,7 +18,7 @@ export function CustomDrawer() {
     const t = useTranslations("Header");
     
     return (
-        <Drawer direction="right">
+        <Drawer direction="left">
             <DrawerTrigger asChild className="p-2 bg-[#F7F5F2] rounded-xl shadow-md">
                 <HiOutlineMenuAlt2 size={45} color="#917355" className="p-2 " />
             </DrawerTrigger>

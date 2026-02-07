@@ -75,7 +75,7 @@ const cards: Cards[] = [
 export const Company = () => {
     const t = useTranslations("Company");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
     return (
         <section
@@ -126,11 +126,11 @@ export const Company = () => {
                         <CarouselContent className="-ml-4 w-auto">
                             {cards.map((card, idx) => (
                                 <CarouselItem key={idx} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
-                                    <Card className="w-full h-[200px] px-4 py-4">
+                                    <Card className="w-full h-[215px] px-4 py-4">
                                         <CardContent className="flex flex-col w-full h-full items-center justify-start p-0">
                                             <div className="flex flex-col items-center justify-center gap-2 text-center">
                                                 <p>{card.icon}</p>
-                                                <h3 className="text-lg font-bold">{t(card.titleKey)}</h3>
+                                                <h3 className="text-lg font-semibold">{t(card.titleKey)}</h3>
                                                 <p className="text-md text-[#968c81]">{t(card.descKey)}</p>
                                             </div>
                                         </CardContent>
@@ -142,7 +142,7 @@ export const Company = () => {
                         <CarouselNext />
                     </Carousel>
                 </div>
-                <p className="text-md text-center md:max-w-2xl">{t('description2')}</p>
+                <p className="text-md text-center md:max-w-2xl italic">{t('description2')}</p>
             </div>
         </section>
     );

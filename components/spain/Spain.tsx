@@ -28,7 +28,7 @@ export function Spain() {
             }`}
         >
             <div className="container mx-auto px-4">
-                <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
+                <h2 className="font-fraunces text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
                     {t("title")}
                 </h2>
 
@@ -38,14 +38,14 @@ export function Spain() {
                             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                 <Globe className="w-5 h-5 text-primary" color="#917355"/>
                             </div>
-                            <h3 className="font-heading text-xl font-semibold text-foreground">
+                            <h3 className="font-fraunces text-xl font-semibold text-foreground">
                                 {t("subtitle")}
                             </h3>
                         </div>
                         <p className=" mb-4 ">
                             {t("intro")}
                         </p>
-                        <ul className="space-y-2 text-[#968c81]">
+                        <ul className="space-y-2 text-[#968c81] italic">
                             <li className="flex items-start gap-2">
                                 <span className="text-primary mt-1"><LuDot size={25} color="#917355" /></span>
                                 <span>{t("people")}</span>
@@ -71,7 +71,7 @@ export function Spain() {
                             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                 <TrendingUp className="w-5 h-5 text-primary" color="#917355" />
                             </div>
-                            <h3 className="font-heading text-xl font-semibold text-foreground">
+                            <h3 className="font-fraunces text-xl font-semibold text-foreground">
                                 {t("economy_title")}
                             </h3>
                         </div>
@@ -80,7 +80,7 @@ export function Spain() {
                                 <p className="text-sm  mb-1">
                                     {t("fact_3")}
                                 </p>
-                                <p className="text-2xl font-semibold text-[#968c81]">
+                                <p className="text-2xl font-semibold text-[#968c81] font-sans">
                                     {t("fact_3_value")}
                                 </p>
                             </div>
@@ -88,7 +88,7 @@ export function Spain() {
                                 <p className="text-sm  mb-1">
                                     {t("fact_4")}
                                 </p>
-                                <p className="text-2xl font-semibold text-[#968c81]">
+                                <p className="text-2xl font-semibold text-[#968c81] font-sans">
                                     {t("fact_4_value")}
                                 </p>
                             </div>
@@ -101,7 +101,7 @@ export function Spain() {
                             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                 <Sun className="w-5 h-5 text-primary" color="#917355"/>
                             </div>
-                            <h3 className="font-heading text-xl font-semibold text-foreground">
+                            <h3 className="font-fraunces text-xl font-semibold text-foreground">
                                 {t("climate_title")}
                             </h3>
                         </div>
@@ -114,7 +114,7 @@ export function Spain() {
                                 <p className="text-xs">
                                     {t("summer_temperature")}
                                 </p>
-                                <p className="font-semibold text-[#968c81]">
+                                <p className="font-semibold text-[#968c81] font-sans">
                                     {t("summer_temperature_value")}
                                 </p>
                             </div>
@@ -123,7 +123,7 @@ export function Spain() {
                                 <p className="text-xs">
                                     {t("winter_temperature")}
                                 </p>
-                                <p className="font-semibold text-[#968c81]">
+                                <p className="font-semibold text-[#968c81] font-sans">
                                     {t("winter_temperature_value")}
                                 </p>
                             </div>
@@ -134,8 +134,8 @@ export function Spain() {
                 {/* Award Banner */}
                 <div className="bg-[#C6B38E] text-primary-foreground rounded-xl p-6 mb-12 flex items-center justify-center gap-4 text-center">
                     <Award className="w-8 h-8 shrink-0" />
-                    <div>
-                        <p className="font-heading text-lg md:text-xl font-semibold">
+                    <div className="italic">
+                        <p className="font-fraunces text-lg md:text-xl font-semibold">
                             {t("expat_line")}
                         </p>
                         <p className="text-primary-foreground/90 text-sm mt-1">
@@ -146,7 +146,7 @@ export function Spain() {
 
                 {/* Investor Benefits */}
                 <div>
-                    <h3 className="font-heading text-2xl md:text-3xl font-semibold text-[#917355] text-center mb-8">
+                    <h3 className="font-fraunces text-2xl md:text-3xl font-semibold text-[#917355] text-center mb-8">
                         {t("investor_title")}
                     </h3>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">

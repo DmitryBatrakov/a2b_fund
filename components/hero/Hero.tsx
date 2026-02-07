@@ -33,10 +33,10 @@ export const Hero = () => {
                 }`}
             >
                 <div className="flex flex-col justify-center items-center ">
-                    <h1 className="text-5xl text-center font-bold text-white">
+                    <h1 className="text-5xl text-center font-semibold text-white">
                         A2B PRIVATE{" "}
                     </h1>
-                    <h1 className="text-5xl text-center font-bold text-white">
+                    <h1 className="text-5xl text-center font-semibold text-white">
                         EQUITY FUND
                     </h1>
                 </div>
@@ -44,7 +44,7 @@ export const Hero = () => {
                     <h2 className="text-lg font-semibold text-[#dfd7d1] text-center">
                         {t("h2")}
                     </h2>
-                    <h3 className="text-sm text-[#dad0c9] text-center">
+                    <h3 className="text-sm text-[#dad0c9] text-center italic">
                         {t("h3")}
                     </h3>
                 </div>
