@@ -71,7 +71,7 @@ export function ContactForn() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30 hidden md:block my-3">
                 <DotPattern className="text-[#917355]" />
             </div>
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="container mx-auto px-4 relative ">
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-4">
                     {t("title")}
                 </h2>
