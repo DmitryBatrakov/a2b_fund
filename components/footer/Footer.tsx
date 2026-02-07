@@ -1,20 +1,56 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import {
+    MapPin,
+    Phone,
+    Mail,
+    Facebook,
+    Instagram,
+    Linkedin,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import type { LucideIcon } from "lucide-react";
 
-const contactItems = [
-    { key: "address", icon: MapPin, line1Key: "address_line1", line2Key: "address_line2" },
-    { key: "phone", icon: Phone, line1Key: "phone_line1", line2Key: "phone_line2" },
-    { key: "email", icon: Mail, line1Key: "email_line1", line2Key: "email_line2" },
-] as const;
+type ContactItem = {
+    key: "address" | "phone" | "email";
+    icon: LucideIcon;
+    line1Key: string;
+    line2Key: string;
+};
 
-const socialLinks = [
+type SocialLink = {
+    key: "facebook" | "instagram" | "linkedin";
+    icon: LucideIcon;
+    href: string;
+};
+
+const contactItems: readonly ContactItem[] = [
+    {
+        key: "address",
+        icon: MapPin,
+        line1Key: "address_line1",
+        line2Key: "address_line2",
+    },
+    {
+        key: "phone",
+        icon: Phone,
+        line1Key: "phone_line1",
+        line2Key: "phone_line2",
+    },
+    {
+        key: "email",
+        icon: Mail,
+        line1Key: "email_line1",
+        line2Key: "email_line2",
+    },
+];
+
+const socialLinks: readonly SocialLink[] = [
     { key: "facebook", icon: Facebook, href: "#" },
     { key: "instagram", icon: Instagram, href: "#" },
     { key: "linkedin", icon: Linkedin, href: "#" },
-] as const;
+];
 
 export function Footer() {
     const t = useTranslations("Footer");
@@ -28,26 +64,28 @@ export function Footer() {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto mb-14 md:mb-16">
-                    {contactItems.map(({ key, icon: Icon, line1Key, line2Key }) => (
-                        <Card
-                            key={key}
-                            className="bg-[#ebe5df]/80 border-0 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
-                        >
-                            <CardContent className="flex flex-col items-center gap-2 p-6 w-full">
-                                <div className="w-10 h-10 rounded-full bg-[#917355]/10 flex items-center justify-center shrink-0">
-                                    <Icon className="w-5 h-5 text-[#917355]" />
-                                </div>
-                                <p className="font-heading text-sm font-semibold text-[#917355]">
-                                    {t(`${key}_label`)}
-                                </p>
-                                <p className="text-[#968c81] text-sm leading-relaxed">
-                                    {t(line1Key)}
-                                    <br />
-                                    {t(line2Key)}
-                                </p>
-                            </CardContent>
-                        </Card>
-                    ))}
+                    {contactItems.map(
+                        ({ key, icon: Icon, line1Key, line2Key }) => (
+                            <Card
+                                key={key}
+                                className="bg-[#ebe5df]/80 border-0 rounded-xl shadow-sm flex flex-col items-center justify-center text-center"
+                            >
+                                <CardContent className="flex flex-col items-center gap-2 p-6 w-full">
+                                    <div className="w-10 h-10 rounded-full bg-[#917355]/10 flex items-center justify-center shrink-0">
+                                        <Icon className="w-5 h-5 text-[#917355]" />
+                                    </div>
+                                    <p className="font-heading text-sm font-semibold text-[#917355]">
+                                        {t(`${key}_label`)}
+                                    </p>
+                                    <p className="text-[#968c81] text-sm leading-relaxed">
+                                        {t(line1Key)}
+                                        <br />
+                                        {t(line2Key)}
+                                    </p>
+                                </CardContent>
+                            </Card>
+                        )
+                    )}
                 </div>
 
                 {/* Нижний блок: текст слева, иконки соцсетей справа */}

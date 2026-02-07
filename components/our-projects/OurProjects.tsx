@@ -68,7 +68,7 @@ export function OurProjects({ projects: projectsProp }: OurProjectsProps) {
     const projects = projectsProp.length > 0 ? projectsProp : mockProjects;
     const [modalProject, setModalProject] = useState<Project | null>(null);
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
         <section

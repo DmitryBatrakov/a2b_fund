@@ -12,7 +12,9 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const MEMBER_IDS = [1, 2, 3, 4] as const;
+type MemberId = 1 | 2 | 3 | 4;
+
+const MEMBER_IDS: readonly MemberId[] = [1, 2, 3, 4];
 
 function TeamCard({
     id,
@@ -52,7 +54,7 @@ function TeamCard({
 export function OurTeam() {
     const t = useTranslations("OurTeam");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
         <section

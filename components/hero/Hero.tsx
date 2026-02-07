@@ -1,7 +1,9 @@
+"use client";
 
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
+import { scrollToSection } from "@/lib/utils";
 
 export const Hero = () => {
     const t = useTranslations("Hero");
@@ -36,13 +38,14 @@ export const Hero = () => {
                         {t("h2")}
                     </h2>
                     <h3 className="text-sm text-[#dad0c9] text-center italic">
-                        {t("h3")}
+                    {t("h3")}
                     </h3>
                 </div>
                 <div>
                     <Button
                         variant="custom"
-                        className="shadow-2xl shadow-amber-50/50"
+                        className="shadow-2xl shadow-amber-50/50 cursor-pointer"
+                        onClick={() => scrollToSection("contact")}
                     >
                         {t("button")}
                     </Button>

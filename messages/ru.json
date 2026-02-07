@@ -217,7 +217,8 @@
         "email_required": "Введите email",
         "email_invalid": "Некорректный email",
         "phone_required": "Введите телефон",
-        "message_required": "Введите сообщение"
+        "message_required": "Введите сообщение",
+        "success_message": "Заявка отправлена. Мы свяжемся с вами в ближайшее время."
     },
     "Footer": {
         "title": "Контакты",

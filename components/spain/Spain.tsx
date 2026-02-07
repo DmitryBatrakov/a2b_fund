@@ -18,7 +18,7 @@ import { useInView } from "@/lib/use-in-view";
 export function Spain() {
     const t = useTranslations("Spain");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
         <section
@@ -134,9 +134,9 @@ export function Spain() {
 
                 {/* Award Banner */}
                 <div className="bg-[#C6B38E] text-primary-foreground rounded-xl p-6 mb-12 flex items-center justify-center gap-4 text-center">
-                    <Award className="w-8 h-8 shrink-0" />
-                    <div className="italic">
-                        <p className="font-fraunces text-lg md:text-xl font-semibold">
+                    <Award className="w-8 h-8 md:w-12 md:h-12 shrink-0" />
+                    <div className="">
+                        <p className="text-lg md:text-xl font-semibold tracking-widest italic">
                             {t("expat_line")}
                         </p>
                         <p className="text-primary-foreground/90 text-sm mt-1">

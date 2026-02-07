@@ -10,6 +10,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { DotPattern } from "../ui/dot-pattern";
+import { sendContactEmail } from "@/features/email/api";
+import { toast } from "sonner";
 
 export type ContactFormValues = {
     name: string;
@@ -18,8 +20,7 @@ export type ContactFormValues = {
     message?: string;
 };
 
-/** Заглушка отправки: симулирует API-запрос. Замените на реальный вызов. */
-async function submitContactStub(
+export async function submitContactStub(
     data: ContactFormValues
 ): Promise<{ ok: boolean }> {
     await new Promise((resolve) => setTimeout(resolve, 800));
@@ -51,9 +52,13 @@ export function ContactForn() {
     });
 
     const mutation = useMutation({
-        mutationFn: submitContactStub,
-        onSuccess: () => {
-            form.reset();
+        mutationFn: sendContactEmail,
+        onSuccess: (result) => {
+            if (result.ok) form.reset();
+            toast.success(t("success_message"));
+        },
+        onError: (error) => {
+            toast.error(error.message);
         },
     });
 
@@ -63,8 +68,8 @@ export function ContactForn() {
 
     return (
         <section id="contact" className="py-10 md:py-20 relative">
-            <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30 hidden md:block">
-                <DotPattern  color="#917355"/>
+            <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30 hidden md:block my-3">
+                <DotPattern className="text-[#917355]" />
             </div>
             <div className="container mx-auto px-4 relative z-10">
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-4">

@@ -4,18 +4,26 @@ import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Search, Scale, Languages, Building2 } from "lucide-react";
 import { useInView } from "@/lib/use-in-view";
+import type { LucideIcon } from "lucide-react";
 
-const services = [
+type OurServicesItemKey = "selection" | "legal" | "translation" | "management";
+
+interface OurServicesItem {
+    key: OurServicesItemKey;
+    icon: LucideIcon;
+}
+
+const services: OurServicesItem[] = [
     { key: "selection", icon: Search },
     { key: "legal", icon: Scale },
     { key: "translation", icon: Languages },
     { key: "management", icon: Building2 },
-] as const;
+];
 
 export const OurSevices = () => {
     const t = useTranslations("OurServices");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
         <section

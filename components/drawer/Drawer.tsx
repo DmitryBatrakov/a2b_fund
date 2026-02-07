@@ -8,20 +8,26 @@ import {
     DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer";
+import { scrollToSection } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 
-const ANCHOR_ITEMS = [
+type SectionId = "company" | "projects" | "services" | "contact";
+type HeaderNavKey = "nav_home" | "nav_our_projects" | "nav_our_services" | "nav_contact_us";
+
+interface AnchorItem {
+    id: SectionId;
+    labelKey: HeaderNavKey;
+}
+
+const ANCHOR_ITEMS: AnchorItem[] = [
     { id: "company", labelKey: "nav_home" },
     { id: "projects", labelKey: "nav_our_projects" },
     { id: "services", labelKey: "nav_our_services" },
     { id: "contact", labelKey: "nav_contact_us" },
-] as const;
+];
 
-function scrollToSection(id: string) {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-}
 
 export function CustomDrawer() {
     const t = useTranslations("Header");
@@ -33,7 +39,7 @@ export function CustomDrawer() {
             </DrawerTrigger>
             <DrawerContent>
                 <DrawerHeader className="px-4 py-2 mt-4">
-                    <DrawerTitle className="text-xl font-semibold">
+                    <DrawerTitle className="text-xl font-semibold text-[#917355]">
                         {t("menu_title")}
                     </DrawerTitle>
                     <DrawerClose asChild className="p-0">

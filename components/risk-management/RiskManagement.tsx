@@ -2,22 +2,29 @@
 
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
-import { Calendar, Scale, FileSearch, Building2, Clock } from "lucide-react";
+import { Calendar, Scale, FileSearch, Building2, Clock, LucideIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useInView } from "@/lib/use-in-view";
 
-const items = [
+type RiskManagementItemKey = "item1" | "item2" | "item3" | "item4" | "item5";
+
+interface RiskManagementItem {
+    key: RiskManagementItemKey;
+    icon: LucideIcon;
+}
+
+const items: RiskManagementItem[] = [
     { key: "item1", icon: Calendar },
     { key: "item2", icon: Scale },
     { key: "item3", icon: FileSearch },
     { key: "item4", icon: Building2 },
     { key: "item5", icon: Clock },
-] as const;
+];
 
 export function RiskManagement() {
     const t = useTranslations("RiskManagement");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
         <section

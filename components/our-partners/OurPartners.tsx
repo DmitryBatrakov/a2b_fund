@@ -5,12 +5,23 @@ import { useTranslations } from "next-intl";
 import { Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useInView } from "@/lib/use-in-view";
+import type { LucideIcon } from "lucide-react";
 
-type Partner = {
+type OurPartnersPartnerKey =
+    | "partner_1"
+    | "partner_2"
+    | "partner_3"
+    | "partner_4"
+    | "partner_5"
+    | "partner_6"
+    | "partner_7"
+    | "partner_8";
+
+interface Partner {
     id: number;
-    key: string;
-    icon: React.ElementType;
-};
+    key: OurPartnersPartnerKey;
+    icon: LucideIcon;
+}
 
 const partners: Partner[] = [
     { id: 1, key: "partner_1", icon: Building2 },
@@ -23,7 +34,7 @@ const partners: Partner[] = [
 export function OurPartners() {
     const t = useTranslations("OurPartners");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
         <section id="partners" ref={sectionRef} className="py-10 md:py-20 bg-[#F7F5F2]">

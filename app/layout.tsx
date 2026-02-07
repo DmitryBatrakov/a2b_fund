@@ -5,6 +5,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import { Providers } from "./providers";
 import { Fraunces } from 'next/font/google'
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const fraunces = Fraunces({ 
   subsets: ['latin', 'latin-ext'],
@@ -45,8 +46,10 @@ export default async function RootLayout({
                     <NextIntlClientProvider locale={locale} messages={messages}>
                         {children}
                     </NextIntlClientProvider>
+                    <Toaster richColors />
                 </Providers>
             </body>
         </html>
     );
 }
+ 
