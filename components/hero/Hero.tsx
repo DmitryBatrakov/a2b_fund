@@ -1,19 +1,14 @@
-"use client";
 
-import { useRef } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
-import { useInView } from "@/lib/use-in-view";
 
 export const Hero = () => {
     const t = useTranslations("Hero");
-    const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
     return (
         <section
-            ref={sectionRef}
+            id="hero"
             className="relative w-full overflow-hidden min-h-screen"
         >
             <Image
@@ -26,11 +21,7 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/35 to-transparent" />
 
             <div
-                className={`absolute top-12 left-0 w-full h-full flex flex-col justify-center items-center gap-5 px-4 transition-all duration-700 ${
-                    isInView
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"
-                }`}
+                className={`absolute top-12 left-0 w-full h-full flex flex-col justify-center items-center gap-5 px-4 transition-all duration-700`}
             >
                 <div className="flex flex-col justify-center items-center ">
                     <h1 className="text-5xl text-center font-semibold text-white">

@@ -23,10 +23,10 @@ const partners: Partner[] = [
 export function OurPartners() {
     const t = useTranslations("OurPartners");
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.6 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.15 });
 
     return (
-        <section ref={sectionRef} className="py-10 md:py-20 bg-[#F7F5F2]">
+        <section id="partners" ref={sectionRef} className="py-10 md:py-20 bg-[#F7F5F2]">
             <div className="container mx-auto px-4">
                 <h2
                     className={`font-fraunces text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-12 md:mb-16 transition-all duration-500 ${
@@ -42,7 +42,7 @@ export function OurPartners() {
                     {partners.map((p, index) => (
                         <Card
                             key={p.id}
-                            className={`bg-[#ebe5df] border-0 flex flex-col items-center justify-center min-h-[140px] aspect-2/1 hover:shadow-md transition-all duration-300 ${
+                            className={`bg-[#ebe5df] border-0 flex flex-col items-center justify-center min-h-[140px] aspect-2/1 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 ${
                                 isInView
                                     ? "opacity-100 translate-y-0"
                                     : "opacity-0 translate-y-6"

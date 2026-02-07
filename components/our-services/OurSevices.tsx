@@ -19,21 +19,22 @@ export const OurSevices = () => {
 
     return (
         <section
+            id="services"
             ref={sectionRef}
             className={`py-10 md:py-20 min-h-screen md:min-h-0 transition-all duration-500 ${
                 isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }`}
         >
             <div className="container mx-auto px-4">
-                <h2 className="font-fraunces text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
+                <h2 className=" text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-16">
                     {t("title")}
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-6 ">
                     {services.map(({ key, icon: Icon }) => (
                         <div
                             key={key}
-                            className="rounded-xl p-6 shadow-sm border border-[#91735556]"
+                            className="rounded-xl p-6 shadow-sm border border-[#91735556] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
                         >
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

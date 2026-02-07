@@ -147,6 +147,18 @@
             "partner_8": "Socio 8"
         }
     },
+    "OurTeam": {
+        "title": "Nuestro equipo",
+        "member_1_name": "Iván Petrov",
+        "member_1_role": "Director general",
+        "member_2_name": "María Ivanova",
+        "member_2_role": "Directora comercial",
+        "member_3_name": "Alexey Sidorov",
+        "member_3_role": "Arquitecto jefe",
+        "member_4_name": "Elena Vasilyeva",
+        "member_4_role": "Asesora jurídica"
+    },
+
     "Lifecycle": {
         "main_title": "Etapas de colaboración",
         "card_1": {
@@ -181,5 +193,46 @@
             "title_card": "8. Generación de ingresos",
             "description_card": "Usted recibe una renta estable a través del alquiler o la venta del activo terminado."
         }
+    },
+    "RiskManagement": {
+        "title": "Riesgos y Cómo los Cerramos",
+        "item1_title": "Estacionalidad",
+        "item1_description": "La estacionalidad se reduce al mínimo gracias a la organización de festivales, eventos y al enfoque en alquileres de corta y media estancia.",
+        "item2_title": "Cuestiones legales",
+        "item2_description": "Todos los contratos se formalizan ante notario, lo que garantiza la protección legal de ambas partes.",
+        "item3_title": "Obtención de permisos",
+        "item3_description": "Trabajamos con un arquitecto español certificado y todos los proyectos están aprobados por el ayuntamiento local.",
+        "item4_title": "Legalidad de la construcción y la reforma",
+        "item4_description": "Gestionamos todas las licencias necesarias, colaboramos con empresas constructoras autorizadas, aseguramos la responsabilidad civil y ofrecemos garantía sobre las obras de reforma.",
+        "item5_title": "Plazos (tiempos de ejecución)",
+        "item5_description": "Realizamos la gestión del proyecto con un project manager experimentado, lo que asegura el cumplimiento estricto de los plazos."
+    },
+    "ContactForm": {
+        "title": "Dejar una solicitud",
+        "subtitle": "Rellene el formulario y nos pondremos en contacto con usted en breve",
+        "name_placeholder": "Su nombre",
+        "email_placeholder": "Email",
+        "phone_placeholder": "Teléfono",
+        "message_placeholder": "Mensaje",
+        "submit": "Enviar solicitud",
+        "name_required": "El nombre es obligatorio",
+        "email_required": "El email es obligatorio",
+        "email_invalid": "Email no válido",
+        "phone_required": "El teléfono es obligatorio",
+        "message_required": "El mensaje es obligatorio"
+    },
+    "Footer": {
+        "title": "Contacto",
+        "address_label": "Dirección",
+        "address_line1": "Calle de Colón, 46004",
+        "address_line2": "Valencia, España",
+        "phone_label": "Teléfono",
+        "phone_line1": "+34 123 456 789",
+        "phone_line2": "+7 (495) 123-45-67",
+        "email_label": "Email",
+        "email_line1": "info@valencia-invest.com",
+        "email_line2": "support@valencia-invest.com",
+        "social_title": "Síguenos en redes sociales",
+        "social_subtitle": "Noticias y ofertas actualizadas"
     }
 }

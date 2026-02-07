@@ -144,6 +144,18 @@
             "partner_8": "Partner 8"
         }
     },
+    "OurTeam": {
+        "title": "Our Team",
+        "member_1_name": "Ivan Petrov",
+        "member_1_role": "CEO",
+        "member_2_name": "Maria Ivanova",
+        "member_2_role": "Sales Director",
+        "member_3_name": "Alexey Sidorov",
+        "member_3_role": "Chief Architect",
+        "member_4_name": "Elena Vasilyeva",
+        "member_4_role": "Legal Counsel"
+    },
+
     "Lifecycle": {
         "main_title": "Stages of cooperation",
         "card_1": {
@@ -178,5 +190,46 @@
             "title_card": "8. Receiving income",
             "description_card": "You receive stable rental income or profit from the sale of the completed property."
         }
+    },
+    "RiskManagement": {
+        "title": "Risks and How We Mitigate Them",
+        "item1_title": "Seasonality",
+        "item1_description": "Seasonality is minimized through festivals, events, and a strategy focused on short- and mid-term rentals.",
+        "item2_title": "Legal matters",
+        "item2_description": "All agreements are notarized, ensuring full legal protection for all parties involved.",
+        "item3_title": "Obtaining permits",
+        "item3_description": "We work with a certified Spanish architect, and all projects are approved by the local municipality.",
+        "item4_title": "Legality of construction and renovation",
+        "item4_description": "We obtain all required permits, work exclusively with licensed construction companies, provide liability insurance, and guarantee the quality of renovation.",
+        "item5_title": "Time (deadlines)",
+        "item5_description": "We provide professional project management led by an experienced project manager to ensure all deadlines are met."
+    },
+    "ContactForm": {
+        "title": "Contact Us",
+        "subtitle": "Fill out the form and we will contact you shortly",
+        "name_placeholder": "Your name",
+        "email_placeholder": "Email",
+        "phone_placeholder": "Phone",
+        "message_placeholder": "Message",
+        "submit": "Send request",
+        "name_required": "Name is required",
+        "email_required": "Email is required",
+        "email_invalid": "Invalid email",
+        "phone_required": "Phone is required",
+        "message_required": "Message is required"
+    },
+    "Footer": {
+        "title": "Contacts",
+        "address_label": "Address",
+        "address_line1": "Calle de Colón, 46004",
+        "address_line2": "Valencia, Spain",
+        "phone_label": "Phone",
+        "phone_line1": "+34 123 456 789",
+        "phone_line2": "+7 (495) 123-45-67",
+        "email_label": "Email",
+        "email_line1": "info@valencia-invest.com",
+        "email_line2": "support@valencia-invest.com",
+        "social_title": "Follow us on social media",
+        "social_subtitle": "Latest news and offers"
     }
 }

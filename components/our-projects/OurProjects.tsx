@@ -68,26 +68,24 @@ export function OurProjects({ projects: projectsProp }: OurProjectsProps) {
     const projects = projectsProp.length > 0 ? projectsProp : mockProjects;
     const [modalProject, setModalProject] = useState<Project | null>(null);
     const sectionRef = useRef<HTMLElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.4 });
+    const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
     return (
         <section
+            id="projects"
             ref={sectionRef}
-            className="py-10 md:py-20 bg-[#F7F5F2]"
+            className="py-10 md:py-20 relative"
             key={locale}
         >
+            <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30 mt-50 hidden md:block"></div>
             <div className="container mx-auto px-4">
                 <h2
-                    className={`font-fraunces text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-12 md:mb-16 transition-all duration-500 ${
-                        isInView
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-5"
-                    }`}
+                    className={`font-fraunces text-4xl md:text-5xl font-semibold text-[#917355] text-center mb-12 md:mb-16 transition-all duration-300 `}
                 >
                     {t("title")}
                 </h2>
 
-                <div className="md:hidden w-full mx-auto px-5">
+                <div className="md:hidden w-full mx-auto px-5 ">
                     <Carousel
                         opts={{ align: "start", loop: true }}
                         orientation="horizontal"
@@ -107,7 +105,7 @@ export function OurProjects({ projects: projectsProp }: OurProjectsProps) {
                                         }`}
                                         style={{
                                             transitionDelay: isInView
-                                                ? `${index * 100}ms`
+                                                ? `${index * 150}ms`
                                                 : "0ms",
                                         }}
                                     >
@@ -135,7 +133,7 @@ export function OurProjects({ projects: projectsProp }: OurProjectsProps) {
 
                 {/* Планшет и десктоп: сетка */}
                 <div className="hidden md:block md:max-w-[724px] lg:max-w-[1098px] mx-auto">
-                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 ">
                         {projects.map((project, index) => (
                             <div
                                 key={project.id}

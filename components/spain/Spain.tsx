@@ -22,6 +22,7 @@ export function Spain() {
 
     return (
         <section
+            id="spain"
             ref={sectionRef}
             className={`py-20 bg-[#F7F5F2] transition-all duration-500 ${
                 isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"

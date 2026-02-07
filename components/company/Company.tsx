@@ -79,8 +79,9 @@ export const Company = () => {
 
     return (
         <section
+            id="company"
             ref={sectionRef}
-            className={`relative w-full overflow-hidden py-15 p-3 flex flex-col justify-center items-center transition-all duration-500 ${
+            className={`relative w-full overflow-hidden py-15 p-3 flex flex-col justify-center items-center transition-all duration-300 ${
                 isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }`}
         >
@@ -89,10 +90,9 @@ export const Company = () => {
                     <h2 className="text-4xl font-bold text-[#917355]">{t("titile")}</h2>
                     <p className="text-md text-center md:max-w-2xl">{t("description")}</p>
                 </div>
-                {/* Vertical carousel — mobile */}
                 <div className="md:hidden w-full max-w-xs">
                     <Carousel
-                        opts={{ align: "start", loop: false }}
+                        opts={{ align: "start", loop: true }}
                         orientation="vertical"
                         className="w-full h-[400px]"
                     >
@@ -119,7 +119,7 @@ export const Company = () => {
                 {/* Horizontal carousel — desktop */}
                 <div className="hidden md:block w-full max-w-4xl px-6">
                     <Carousel
-                        opts={{ align: "start", loop: false }}
+                        opts={{ align: "start", loop: true }}
                         orientation="horizontal"
                         className="w-full"
                     >

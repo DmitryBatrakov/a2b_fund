@@ -38,7 +38,7 @@ export function ProjectCard({ project, className, onClick }: ProjectCardProps) {
             onKeyDown={onClick ? (e) => e.key === "Enter" && onClick() : undefined}
             className={
                 "overflow-hidden gap-0 p-0 border-[#91735520] w-full h-[350px] flex flex-col shrink-0 " +
-                (onClick ? "cursor-pointer hover:opacity-95 transition-opacity " : "") +
+                (onClick ? "cursor-pointer hover:shadow-md hover:-translate-y-0.5 duration-300 transition-all " : "") +
                 (className ?? "")
             }
         >

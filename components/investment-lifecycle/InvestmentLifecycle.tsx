@@ -14,6 +14,7 @@ export function InvestmentLifecycle() {
 
     return (
         <section
+            id="lifecycle"
             ref={sectionRef}
             key={locale}
             className={`py-10 md:py-20 bg-background transition-all duration-500 ${
