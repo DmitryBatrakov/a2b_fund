@@ -9,32 +9,37 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDownIcon } from "lucide-react";
+import { useTransition } from "react";
 
-const LOCALES = ["en", "ru", "ua", "es"] as const;
+/** Коды локалей приложения (должны совпадать с i18n и папками messages) */
+type Locale = "en" | "ru" | "ua" | "es";
 
-const LOCALE_LABELS: Record<string, string> = {
+const LOCALES: readonly Locale[] = ["en", "ru", "ua", "es"];
+
+/** Подписи для переключателя по локали */
+const LOCALE_LABELS: Record<Locale, string> = {
     en: "EN",
     ru: "RU",
     ua: "UA",
     es: "ES",
 };
-
 export function LocaleSwitcher() {
     const pathname = usePathname();
     const router = useRouter();
+    const [isPending, startTransition] = useTransition();
 
     const localeFromPath = pathname.match(/^\/([a-z]{2})/)?.[1] ?? "en";
-    const displayLocale = LOCALES.includes(
-        localeFromPath as (typeof LOCALES)[number]
-    )
-        ? localeFromPath
+    const displayLocale: Locale = LOCALES.includes(localeFromPath as Locale)
+        ? (localeFromPath as Locale)
         : "en";
 
-    const switchLocale = (newLocale: string) => {
+    const switchLocale = (newLocale: Locale) => {
         const newPath = pathname.replace(/^\/[a-z]{2}/, `/${newLocale}`);
-        router.replace(newPath);
+        startTransition(() => {
+            router.push(newPath);
+            router.refresh();
+        });
     };
-    
 
     return (
         <DropdownMenu>
@@ -57,7 +62,7 @@ export function LocaleSwitcher() {
                         onClick={() => switchLocale(loc)}
                         className={
                             loc === displayLocale
-                                ? "bg-[#917355]/20 font-medium"
+                                ? "bg-[#917355]/20 font-medium my-1"
                                 : ""
                         }
                     >

@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import { IoHammerOutline } from "react-icons/io5";
 import { MdOutlineCalendarMonth } from "react-icons/md"; // 10+ лет
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2"; // 70+ проектов
@@ -8,6 +11,7 @@ import { TbReportAnalytics } from "react-icons/tb"; // Прозрачность
 import { RiHandCoinLine } from "react-icons/ri"; // Собственный капитал
 
 import { useTranslations } from "next-intl";
+import { useInView } from "@/lib/use-in-view";
 import { Card, CardContent } from "@/components/ui/card";
 
 import {
@@ -70,18 +74,25 @@ const cards: Cards[] = [
 
 export const Company = () => {
     const t = useTranslations("Company");
+    const sectionRef = useRef<HTMLElement>(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
     return (
-        <section className="relative w-full overflow-hidden min-h-screen p-3 flex flex-col justify-center items-center" >
+        <section
+            id="company"
+            ref={sectionRef}
+            className={`relative w-full overflow-hidden py-15 p-3 flex flex-col justify-center items-center transition-all duration-300 ${
+                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}
+        >
             <div className="flex flex-col gap-20 items-center justify-center">
                 <div className="flex flex-col gap-4 items-center justify-center">
                     <h2 className="text-4xl font-bold text-[#917355]">{t("titile")}</h2>
                     <p className="text-md text-center md:max-w-2xl">{t("description")}</p>
                 </div>
-                {/* Vertical carousel — mobile */}
                 <div className="md:hidden w-full max-w-xs">
                     <Carousel
-                        opts={{ align: "start", loop: false }}
+                        opts={{ align: "start", loop: true }}
                         orientation="vertical"
                         className="w-full h-[400px]"
                     >
@@ -106,20 +117,20 @@ export const Company = () => {
                 </div>
 
                 {/* Horizontal carousel — desktop */}
-                <div className="hidden md:block w-full max-w-4xl px-12">
+                <div className="hidden md:block w-full max-w-4xl px-6">
                     <Carousel
-                        opts={{ align: "start", loop: false }}
+                        opts={{ align: "start", loop: true }}
                         orientation="horizontal"
                         className="w-full"
                     >
-                        <CarouselContent className="-ml-4">
+                        <CarouselContent className="-ml-4 w-auto">
                             {cards.map((card, idx) => (
                                 <CarouselItem key={idx} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
-                                    <Card className="w-full h-[180px] px-4 py-4">
-                                        <CardContent className="flex flex-col w-full h-full items-center justify-center p-0">
+                                    <Card className="w-full h-[215px] px-4 py-4">
+                                        <CardContent className="flex flex-col w-full h-full items-center justify-start p-0">
                                             <div className="flex flex-col items-center justify-center gap-2 text-center">
                                                 <p>{card.icon}</p>
-                                                <h3 className="text-lg font-bold">{t(card.titleKey)}</h3>
+                                                <h3 className="text-lg font-semibold">{t(card.titleKey)}</h3>
                                                 <p className="text-md text-[#968c81]">{t(card.descKey)}</p>
                                             </div>
                                         </CardContent>
@@ -131,7 +142,7 @@ export const Company = () => {
                         <CarouselNext />
                     </Carousel>
                 </div>
-                <p className="text-md text-center md:max-w-2xl">{t('description2')}</p>
+                <p className="text-md text-center md:max-w-2xl italic">{t('description2')}</p>
             </div>
         </section>
     );

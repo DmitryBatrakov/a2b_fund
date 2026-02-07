@@ -17,8 +17,8 @@
         "description2": "We work with investors who value reliability, transparency and strong results. More than 10 years of development and construction experience confirm our expertise and trustworthiness.",
 
         "card1": {
-            "title": "10+ years",
-            "description": "of experience in the Spanish market"
+            "title": "10+ ",
+            "description": "years of experience in the Spanish market"
         },
         "card2": {
             "title": "70+",
@@ -127,5 +127,110 @@
             "title": "We invest our own capital",
             "description": "Every project includes our own funds — we share the risk and responsibility for the result."
         }
+    },
+    "OurProjects": {
+        "title": "Our Projects"
+    },
+    "OurPartners": {
+        "title": "Our Partners",
+        "partners": {
+            "partner_1": "Partner 1",
+            "partner_2": "Partner 2",
+            "partner_3": "Partner 3",
+            "partner_4": "Partner 4",
+            "partner_5": "Partner 5",
+            "partner_6": "Partner 6",
+            "partner_7": "Partner 7",
+            "partner_8": "Partner 8"
+        }
+    },
+    "OurTeam": {
+        "title": "Our Team",
+        "member_1_name": "Ivan Petrov",
+        "member_1_role": "CEO",
+        "member_2_name": "Maria Ivanova",
+        "member_2_role": "Sales Director",
+        "member_3_name": "Alexey Sidorov",
+        "member_3_role": "Chief Architect",
+        "member_4_name": "Elena Vasilyeva",
+        "member_4_role": "Legal Counsel"
+    },
+
+    "Lifecycle": {
+        "main_title": "Stages of cooperation",
+        "card_1": {
+            "title_card": "Consultation",
+            "description_card": "We define your investment goals, budget and the most suitable asset type."
+        },
+        "card_2": {
+            "title_card": "Property sourcing",
+            "description_card": "Market analysis and selection of properties with the highest yield potential. Our architect assesses technical feasibility and licensing requirements."
+        },
+        "card_3": {
+            "title_card": "Reservation (1% deposit)",
+            "description_card": "We secure the property and begin full legal due diligence."
+        },
+        "card_4": {
+            "title_card": "Signing the deposit agreement",
+            "description_card": "We formalize the deal terms and financing schedule."
+        },
+        "card_5": {
+            "title_card": "Property purchase",
+            "description_card": "Complete legal support and execution of the purchase agreement."
+        },
+        "card_6": {
+            "title_card": "Renovation and commissioning",
+            "description_card": "Design, construction, furnishing and obtaining operational licenses."
+        },
+        "card_7": {
+            "title_card": "Signing the management contract",
+            "description_card": "We handle rental operations, maintenance, guest services and profitability control."
+        },
+        "card_8": {
+            "title_card": "Receiving income",
+            "description_card": "You receive stable rental income or profit from the sale of the completed property."
+        }
+    },
+    "RiskManagement": {
+        "title": "Risks and How We Mitigate Them",
+        "item1_title": "Seasonality",
+        "item1_description": "Seasonality is minimized through festivals, events, and a strategy focused on short- and mid-term rentals.",
+        "item2_title": "Legal matters",
+        "item2_description": "All agreements are notarized, ensuring full legal protection for all parties involved.",
+        "item3_title": "Obtaining permits",
+        "item3_description": "We work with a certified Spanish architect, and all projects are approved by the local municipality.",
+        "item4_title": "Legality of construction and renovation",
+        "item4_description": "We obtain all required permits, work exclusively with licensed construction companies, provide liability insurance, and guarantee the quality of renovation.",
+        "item5_title": "Time (deadlines)",
+        "item5_description": "We provide professional project management led by an experienced project manager to ensure all deadlines are met."
+    },
+    "ContactForm": {
+        "title": "Contact Us",
+        "subtitle": "Fill out the form and we will contact you shortly",
+        "name_placeholder": "Your name",
+        "email_placeholder": "Email",
+        "phone_placeholder": "Phone",
+        "message_placeholder": "Message",
+        "submit": "Send request",
+        "name_required": "Name is required",
+        "email_required": "Email is required",
+        "email_invalid": "Invalid email",
+        "phone_required": "Phone is required",
+        "message_required": "Message is required",
+        "success_message": "Request sent. We will contact you shortly."
+    },
+    "Footer": {
+        "title": "Contacts",
+        "address_label": "Address",
+        "address_line1": "Calle de Colón, 46004",
+        "address_line2": "Valencia, Spain",
+        "phone_label": "Phone",
+        "phone_line1": "+34 123 456 789",
+        "phone_line2": "+7 (495) 123-45-67",
+        "email_label": "Email",
+        "email_line1": "info@valencia-invest.com",
+        "email_line2": "support@valencia-invest.com",
+        "social_title": "Follow us on social media",
+        "social_subtitle": "Latest news and offers"
     }
 }
